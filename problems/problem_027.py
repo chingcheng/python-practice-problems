@@ -5,4 +5,10 @@
 #
 
 def max_in_list(values):
-    pass
+    if values == []:
+        return None
+    max_value = values[0]
+    for num in values:
+        if num > max_value:
+            max_value = num
+    return max_value
