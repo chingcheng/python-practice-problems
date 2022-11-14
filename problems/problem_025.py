@@ -7,4 +7,9 @@
 #
 
 def calculate_sum(values):
-    pass
+    if values == []:
+        return None
+    sum = 0
+    for nums in values:
+        sum += nums
+    return sum
