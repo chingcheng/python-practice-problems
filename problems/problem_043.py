@@ -18,6 +18,15 @@
 #     result:       [0, 2, 4]
 #
 # Look up the enumerate function to help you with this problem.
-
+# [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5)]
 def find_indexes(search_list, search_term):
-    pass
+    # create a result list
+    result = []
+
+    # enumerate the search list
+    tuple = enumerate(search_list)
+    for index, value in tuple:
+        if search_term == value:
+            result.append(index)
+    # Return the result
+    return result
