@@ -22,4 +22,12 @@
 
 
 def count_letters_and_digits(s):
-    pass
+    # takes in a string s
+    number_of_digits = 0
+    number_of_letters = 0
+    for char in s:
+        if char.isdigit():
+            number_of_digits += 1
+        if char.isalpha():
+            number_of_letters += 1
+    return number_of_letters, number_of_digits
