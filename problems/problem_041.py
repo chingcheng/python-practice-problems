@@ -21,4 +21,13 @@
 # Write out your own pseudocode to help guide you.
 
 def add_csv_lines(csv_lines):
-    pass
+    result = []
+    for str in csv_lines:
+        sum = 0
+        split_str = str.split(',')
+        #when you use split on a string, it will split into a list
+        for num in split_str:
+            numbers = int(num)
+            sum += numbers
+        result.append(sum)
+    return result
