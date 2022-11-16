@@ -5,7 +5,7 @@
 #             to 10, inclusive
 # Returns:    the Roman numeral equivalent of the
 #             parameter value
-#
+
 # All examples
 #     * input: 1
 #       returns: "I"
@@ -28,3 +28,24 @@
 #     * input: 10
 #       returns:  "X"
 
+def simple_roman(num):
+    if num == 1:
+        return "I"
+    elif num == 2:
+        return "II"
+    elif num == 3:
+        return "III"
+    elif num == 4:
+        return "IV"
+    elif num == 5:
+        return "V"
+    elif num == 6:
+        return "VI"
+    elif num == 7:
+        return "VII"
+    elif num == 8:
+        return "VIII"
+    elif num == 9:
+        return "IX"
+    else:
+        return "X"
