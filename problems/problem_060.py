@@ -13,3 +13,11 @@
 #     * input:   [1, 3, 5, 7]
 #       returns: [1, 3, 5, 7]
 
+def only_odds(nums):
+    odd_nums = []
+
+    for num in nums:
+        if num % 2 == 1:
+            odd_nums.append(num)
+
+    return odd_nums
