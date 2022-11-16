@@ -21,3 +21,9 @@ def temperature_differences(highs, lows):
         differences.append(difference)
 
     return differences
+
+# def temperature_differences(highs, lows):
+#     differences = []
+#     for high, low in zip(highs, lows):
+#         differences.append(high - low)
+#     return differences
