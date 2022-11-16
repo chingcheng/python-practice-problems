@@ -15,3 +15,8 @@
 #       parameter 2: 0
 #     returns: "92380"
 
+def num_concat(num1, num2):
+    num1_str = str(num1)
+    num2_str = str(num2)
+    result = num1_str + num2_str
+    return result
