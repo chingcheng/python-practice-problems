@@ -15,3 +15,11 @@
 #     and 7 into a list
 #   * Use random.choice to select one
 
+import random
+
+def specific_random():
+    divisible_numbers = []
+    for num in range(1, 500):
+        if num % 5 == 0 and num % 7 == 0:
+            divisible_numbers.append(num)
+    return random.choice(divisible_numbers)
