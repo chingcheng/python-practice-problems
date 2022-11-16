@@ -20,5 +20,13 @@
 #     * input:   ["Cleveland, OH", "Columbus, OH", "Chicago, IL"]
 #       returns: {"OH": ["Cleveland", "Columbus"], "IL": ["Chicago"]}
 #
-# You may want to look up the ".strip()" method for the string.
+# You may want to look up the ".split()" method for the string.
 
+def group_cities_by_state(list):
+    result = {}
+    for i in list:
+        city, state = i.split(", ")
+        if state not in result:
+            result[state] = []
+        result[state].append(city)
+    return result
